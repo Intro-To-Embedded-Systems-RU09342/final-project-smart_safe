@@ -14,6 +14,7 @@ The micro-controller is programmed with algoritms to control the button, solenoi
 In order to set up this system, the hardware components need to be properly connected and the UART protocol needs to be followed.
 ### UART
 The UART communcation uses the software RealTerm to send the bytes. The display tab, port tab, and send tab need to be adjusted before sending anything to the system. In the display tab, make sure the Hex[space] format is seleted as well as Half-Duplex. Push the "Change" button to save the settings. In the port tab, select the proper COM port for UART, change the baudrate to 9600, and once again push the "change" button. Finally, the bytes can be sent to the micro-controller when it is plugged in to a computer. The format for the passcode input is shown in the table below.
+
 | Byte Number | Contents | Example |
 | ----------- | --------- | ------- |
 | Bytes 0-4 | Passcode input | 0x01 0x02 0x03 0x04 |
