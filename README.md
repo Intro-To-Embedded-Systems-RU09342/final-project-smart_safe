@@ -20,3 +20,6 @@ The UART communcation uses the software RealTerm to send the bytes. The display 
 | Bytes 0-4 | Passcode input | 0x01 0x02 0x03 0x04 |
 | Byte 5 | Would you like to change the passcode? | 0xFF = yes, any other byte = no |
 | Bytes 6-9 | New passcode | 0x05 0x06 0x07 0x08 |
+
+### Hardware
+The system is set up by plugging the micro-controller into the USB port of a computer, and connecting the hardware components to their proper pins. The solenoid has two wires, one connected to ground, and one to pin P2.5. A low side switch is needed to regulate the voltage. The piezo buzzer has one pin going to ground, and the other connected to pin P2.3.
